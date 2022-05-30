@@ -1,0 +1,17 @@
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\Repository.deps.json
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\Repository.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\ref\Repository.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\Repository.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\BusinessObject.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\DataAccessLayer.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\BusinessObject.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.csproj.AssemblyReference.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.csproj.CopyComplete
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\ref\Repository.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\Repository\obj\Debug\net5.0\Repository.pdb

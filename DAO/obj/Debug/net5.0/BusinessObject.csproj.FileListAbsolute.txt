@@ -1,0 +1,15 @@
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\bin\Debug\net5.0\BusinessObject.deps.json
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\bin\Debug\net5.0\BusinessObject.runtimeconfig.json
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\bin\Debug\net5.0\BusinessObject.runtimeconfig.dev.json
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\bin\Debug\net5.0\BusinessObject.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\bin\Debug\net5.0\ref\BusinessObject.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\bin\Debug\net5.0\BusinessObject.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.csproj.AssemblyReference.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.AssemblyInfoInputs.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.AssemblyInfo.cs
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\ref\BusinessObject.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DAO\obj\Debug\net5.0\BusinessObject.genruntimeconfig.cache

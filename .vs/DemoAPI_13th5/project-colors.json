@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cb8880df-8ddd-421d-a33e-395082b1d32a": {
+      "ProjectGuid": "cb8880df-8ddd-421d-a33e-395082b1d32a",
+      "DisplayName": "BusinessObject",
+      "ColorIndex": 0
+    },
+    "97701bc5-564b-466f-aca9-8e3b71f375f5": {
+      "ProjectGuid": "97701bc5-564b-466f-aca9-8e3b71f375f5",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 1
+    },
+    "76c520ae-c036-4f96-ab4a-b2ac49033592": {
+      "ProjectGuid": "76c520ae-c036-4f96-ab4a-b2ac49033592",
+      "DisplayName": "Repository",
+      "ColorIndex": 2
+    },
+    "49bc5e56-1b11-4ac1-95b9-f1c24d00ddd3": {
+      "ProjectGuid": "49bc5e56-1b11-4ac1-95b9-f1c24d00ddd3",
+      "DisplayName": "WebAPI",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

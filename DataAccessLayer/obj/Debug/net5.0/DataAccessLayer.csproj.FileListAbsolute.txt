@@ -1,0 +1,15 @@
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\bin\Debug\net5.0\ref\DataAccessLayer.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\bin\Debug\net5.0\BusinessObject.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\bin\Debug\net5.0\BusinessObject.pdb
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
+D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
