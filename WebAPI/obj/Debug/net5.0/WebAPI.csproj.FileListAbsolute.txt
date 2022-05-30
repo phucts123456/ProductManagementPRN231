@@ -139,6 +139,3 @@ D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
 D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
 D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\bin\Debug\net5.0\WebAPI.Views.dll
-D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
-D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-D:\KySummer2022\PRN231\Demo\DemoAPI_13th5\WebAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

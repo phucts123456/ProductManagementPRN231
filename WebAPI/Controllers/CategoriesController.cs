@@ -9,7 +9,6 @@ using BusinessObject;
 using Repository;
 using Microsoft.AspNetCore.Http;
 using System.Net.Mime;
-using WebAPI.DTO;
 
 namespace WebAPI.Controllers
 {
@@ -18,7 +17,7 @@ namespace WebAPI.Controllers
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryRepository _categoryRepository;
-        public CategoriesController(ICategoryRepository repository)
+        public CategoriesController(MyStorePRN231Context context,ICategoryRepository repository)
         {
             _categoryRepository = repository;
         }
@@ -27,9 +26,9 @@ namespace WebAPI.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Category>))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<IEnumerable<CategoryDTO>> GetCategorys()
+        public ActionResult<IEnumerable<Category>> GetCategorys()
         {
-            var list = _categoryRepository.GetAll().Select(cate => cate.AsCategoryDTO());
+            var list = _categoryRepository.GetAll();
             if (list == null)
             {
                 return NotFound();
@@ -43,7 +42,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Category))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<CategoryDTO> GetCategory(int id)
+        public ActionResult<Category> GetCategory(int id)
         {
             // if (_context.Categorys == null)
             // {
@@ -56,22 +55,19 @@ namespace WebAPI.Controllers
                 return NotFound();
             }
 
-            return Ok(Category.AsCategoryDTO());
+            return Ok(Category);
         }
 
         // PUT: api/Category/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public IActionResult PutCategory(int id, UpdateCategoryDTO CategoryInput)
+        public IActionResult PutCategory(int id, Category Category)
         {
-            if (id != CategoryInput.CategoryId)
+            if (id != Category.CategoryId)
             {
                 return BadRequest();
             }
-            var Category = new Category { 
-                CategoryId =CategoryInput.CategoryId ,
-                CategoryName = CategoryInput.CategoryName ,
-            };
+
             try
             {
                 _categoryRepository.Update(Category);
@@ -95,17 +91,12 @@ namespace WebAPI.Controllers
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Category> PostCategory(CreateCategoryDTO CategoryInput)
+        public ActionResult<Category> PostCategory(Category Category)
         {
             // if (_context.Categorys == null)
             // {
             //     return Problem("Entity set 'FStoreDBContext.Categorys'  is null.");
             // }
-            var Category = new Category
-            {
-                CategoryId = CategoryInput.CategoryId,
-                CategoryName = CategoryInput.CategoryName,
-            };
             try
             {
                 _categoryRepository.Add(Category);
@@ -120,7 +111,7 @@ namespace WebAPI.Controllers
                 throw;
             }
 
-            return CreatedAtAction("GetCategory", new { id = Category.CategoryId }, Category.AsCategoryDTO());
+            return CreatedAtAction("GetCategory", new { id = Category.CategoryId }, Category);
         }
 
         // DELETE: api/Category/5

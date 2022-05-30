@@ -9,7 +9,6 @@ using BusinessObject;
 using Repository;
 using System.Net.Mime;
 using Microsoft.AspNetCore.Http;
-using WebAPI.DTO;
 
 namespace WebAPI.Controllers
 {
@@ -18,7 +17,7 @@ namespace WebAPI.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IProductRepository _productRepository;
-        public ProductsController(IProductRepository repository)
+        public ProductsController(MyStorePRN231Context context,IProductRepository repository)
         {
             _productRepository = repository;
         }
@@ -27,9 +26,9 @@ namespace WebAPI.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Product>))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public  ActionResult<IEnumerable<ProductDTO>> GetProducts()
+        public  ActionResult<IEnumerable<Product>> GetProducts()
         {
-            var list = _productRepository.GetAll().Select(product => product.AsProductDTO() );
+            var list = _productRepository.GetAll();
             if (list == null)
             {
                 return NotFound();
@@ -45,7 +44,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Product))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<ProductDTO> GetProduct(int id)
+        public ActionResult<Product> GetProduct(int id)
         {
             // if (_context.Products == null)
             // {
@@ -58,26 +57,19 @@ namespace WebAPI.Controllers
                 return NotFound();
             }
 
-            return Ok(product.AsProductDTO());
+            return Ok(product);
         }
 
         // PUT: api/Product/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public IActionResult PutProduct(int id, UpdateProductDTO productInput)
+        public IActionResult PutProduct(int id, Product product)
         {
-            if (id != productInput.ProductId)
+            if (id != product.ProductId)
             {
                 return BadRequest();
             }
-            var product = new Product
-            {
-                CategoryId = productInput.CategoryId,
-                ProductId = productInput.ProductId,
-                ProductName = productInput.ProductName,
-                UnitPrice = productInput.UnitPrice,
-                UnitsInStock = productInput.UnitsInStock,
-            };
+
             try
             {
                 _productRepository.Update(product);
@@ -101,20 +93,12 @@ namespace WebAPI.Controllers
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<ProductDTO> PostProduct(CreateProductDTO productInput)
+        public ActionResult<Product> PostProduct(Product product)
         {
             // if (_context.Products == null)
             // {
             //     return Problem("Entity set 'FStoreDBContext.Products'  is null.");
             // }
-            var product = new Product
-            {
-                CategoryId = productInput.CategoryId,
-                ProductId = productInput.ProductId,
-                ProductName = productInput.ProductName,
-                UnitPrice = productInput.UnitPrice,
-                UnitsInStock = productInput.UnitsInStock,
-            };
             try
             {
                 _productRepository.Add(product);
@@ -129,7 +113,7 @@ namespace WebAPI.Controllers
                 throw;
             }
 
-            return CreatedAtAction("GetProduct", new { id = product.ProductId }, product.AsProductDTO());
+            return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);
         }
 
         // DELETE: api/Product/5

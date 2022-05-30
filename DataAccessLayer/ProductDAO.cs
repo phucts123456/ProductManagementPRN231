@@ -50,8 +50,8 @@ namespace DataAccessLayer
             try
             {
 
-                Product ProductFind = GetProductByID(Product.ProductId);
-                if (ProductFind == null)
+                Product Cate = GetProductByID(Product.ProductId);
+                if (Product == null)
                 {
                     var myStockDB = new MyStorePRN231Context();
                     myStockDB.Products.Add(Product);
